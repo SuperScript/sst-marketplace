@@ -15,6 +15,14 @@
         "repo": "superscript/test-plugin"
       },
       "description": "A test plugin for validating marketplace functionality."
+    },
+    {
+      "name": "plugin-ops",
+      "source": {
+        "source": "github",
+        "repo": "superscript/plugin-ops"
+      },
+      "description": "A plugin implementing various plugins operations."
     }
   ]
 }
