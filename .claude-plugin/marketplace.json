@@ -11,10 +11,9 @@
     {
       "name": "test-plugin",
       "source": {
-        "source": "url",
-        "url": "https://github.com/superscript/test-plugin.git"
+        "source": "github",
+        "repo": "superscript/test-plugin"
       },
-      "homepage": "https://github.com/superscript/test-plugin",
       "description": "A test plugin for validating marketplace functionality."
     }
   ]
