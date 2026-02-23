@@ -1,0 +1,168 @@
+#!/bin/sh
+set -eu
+
+shout() { printf '%s\n' "$0: $*" >&2; }
+barf() { shout "fatal: $*"; exit 111; }
+
+manifest=".claude-plugin/marketplace.json"
+errors=0
+warnings=0
+
+error() {
+  shout "error: $1"
+  errors=$((${errors} + 1))
+}
+
+warn() {
+  shout "warning: $1"
+  warnings=$((${warnings} + 1))
+}
+
+# --- File exists and is valid JSON ---
+if [ ! -f "${manifest}" ]; then
+  barf "${manifest} not found"
+fi
+
+if ! jq empty "${manifest}" 2>/dev/null; then
+  barf "${manifest} is not valid JSON"
+fi
+
+# --- Required top-level fields ---
+for field in name owner plugins; do
+  if [ "$(jq --arg f "${field}" 'has($f)' "${manifest}")" != "true" ]; then
+    error "Missing required top-level field: ${field}"
+  fi
+done
+
+# --- Owner has name field ---
+if [ "$(jq 'has("owner")' "${manifest}")" = "true" ]; then
+  if [ "$(jq '.owner | has("name")' "${manifest}")" != "true" ]; then
+    error "owner must have a 'name' field"
+  fi
+fi
+
+# --- Marketplace name is not a reserved Anthropic name ---
+reserved_names="anthropic claude claude-code mcp"
+marketplace_name="$(jq -r '.name // ""' "${manifest}")"
+for reserved in ${reserved_names}; do
+  if [ "${marketplace_name}" = "${reserved}" ]; then
+    error "Marketplace name '${marketplace_name}' is reserved"
+  fi
+done
+
+# --- Plugins is an array ---
+if [ "$(jq '.plugins | type' "${manifest}")" != '"array"' ]; then
+  barf "plugins must be an array"
+fi
+
+plugin_count="$(jq '.plugins | length' "${manifest}")"
+
+# --- Each plugin has required fields ---
+missing="$(jq -r '
+  .plugins | to_entries[] |
+  select(
+    (.value.name | not) or
+    (.value.source | not) or
+    (.value.description | not)
+  ) | .value.name // "plugin[\(.key)]"
+' "${manifest}")"
+
+if [ -n "${missing}" ]; then
+  for p in ${missing}; do
+    error "Plugin '${p}' is missing required fields (name, source, description)"
+  done
+fi
+
+# --- Plugin names are kebab-case ---
+bad_names="$(jq -r '
+  .plugins[].name // "" |
+  select(test("^[a-z][a-z0-9]*(-[a-z0-9]+)*$") | not)
+' "${manifest}")"
+
+if [ -n "${bad_names}" ]; then
+  for n in ${bad_names}; do
+    error "Plugin '${n}' is not valid kebab-case"
+  done
+fi
+
+# --- Plugin names are unique ---
+unique_count="$(jq '[.plugins[].name] | unique | length' "${manifest}")"
+if [ "${unique_count}" != "${plugin_count}" ]; then
+  error "Duplicate plugin names detected"
+fi
+
+# --- No string sources (enforces external-only policy) ---
+string_sources="$(jq -r '
+  .plugins | to_entries[] |
+  select(.value.source | type == "string") |
+  .value.name // "plugin[\(.key)]"
+' "${manifest}")"
+
+if [ -n "${string_sources}" ]; then
+  for p in ${string_sources}; do
+    error "Plugin '${p}' has a string source (must be an object with a 'source' type field)"
+  done
+fi
+
+# --- Source objects have correct fields for their type ---
+jq -r '
+  .plugins[] |
+  select(.source | type == "object") |
+  [.name, (.source.source // ""), (.source | tostring)] |
+  @tsv
+' "${manifest}" | while IFS='	' read -r pname stype _sobj; do
+  case "${stype}" in
+    github)
+      repo="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.repo // ""' "${manifest}")"
+      if [ -z "${repo}" ]; then
+        error "Plugin '${pname}' (github): missing 'repo' field"
+      elif ! printf '%s' "${repo}" | grep -qE '^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$'; then
+        error "Plugin '${pname}' (github): repo '${repo}' is not in owner/repo format"
+      fi
+      ;;
+    url)
+      url="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.url // ""' "${manifest}")"
+      if [ -z "${url}" ]; then
+        error "Plugin '${pname}' (url): missing 'url' field"
+      fi
+      ;;
+    npm)
+      pkg="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.package // ""' "${manifest}")"
+      if [ -z "${pkg}" ]; then
+        error "Plugin '${pname}' (npm): missing 'package' field"
+      fi
+      ;;
+    pip)
+      pkg="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.package // ""' "${manifest}")"
+      if [ -z "${pkg}" ]; then
+        error "Plugin '${pname}' (pip): missing 'package' field"
+      fi
+      ;;
+    "")
+      error "Plugin '${pname}': source object missing 'source' type field"
+      ;;
+    *)
+      error "Plugin '${pname}': unknown source type '${stype}'"
+      ;;
+  esac
+done
+
+# --- Warn if plugins are not alphabetically ordered ---
+is_sorted="$(jq '
+  [.plugins[].name] as $names |
+  ($names | sort) == $names
+' "${manifest}")"
+
+if [ "${is_sorted}" != "true" ]; then
+  warn "Plugins are not in alphabetical order"
+fi
+
+# --- Summary ---
+if [ "${errors}" -gt 0 ]; then
+  barf "validation failed with ${errors} error(s) and ${warnings} warning(s)"
+fi
+
+if [ "${warnings}" -gt 0 ]; then
+  shout "validation passed with ${warnings} warning(s)"
+fi
+exit 0

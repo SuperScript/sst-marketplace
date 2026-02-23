@@ -1,0 +1,20 @@
+{
+  "name": "sst-marketplace",
+  "owner": {
+    "name": "sst"
+  },
+  "metadata": {
+    "description": "A curated catalog of Claude Code plugins maintained by the SST community. All plugins are external — no plugin code lives in this repository.",
+    "homepage": "https://github.com/sst/sst-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "test-plugin",
+      "source": {
+        "source": "github",
+        "repo": "superscript/test-plugin"
+      },
+      "description": "A test plugin for validating marketplace functionality."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "plansDirectory": "plans/",
+  "permissions": {
+    "defaultMode": "plan",
+    "allow": [
+      "Read(**/*)",
+      "Read(~/.claude/**/*)",
+      "WebSearch",
+      "WebFetch",
+      "Bash(scripts/validate-marketplace)"
+    ]
+  }
+}
