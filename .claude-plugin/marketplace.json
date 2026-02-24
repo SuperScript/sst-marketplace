@@ -9,12 +9,36 @@
   },
   "plugins": [
     {
+      "name": "makefile-writing",
+      "source": {
+        "source": "github",
+        "repo": "superscript/makefile-writing"
+      },
+      "description": "Write Makefiles adhering to SuperScript standards"
+    },
+    {
       "name": "plugin-ops",
       "source": {
         "source": "github",
         "repo": "superscript/plugin-ops"
       },
       "description": "A plugin implementing various plugins operations."
+    },
+    {
+      "name": "scrip-programming",
+      "source": {
+        "source": "github",
+        "repo": "superscript/scrip-programming"
+      },
+      "description": "Programming conventions for use of the scrip project"
+    },
+    {
+      "name": "shell-programming",
+      "source": {
+        "source": "github",
+        "repo": "superscript/shell-programming"
+      },
+      "description": "POSIX shell programming conventions for sh scripts"
     }
   ]
 }
