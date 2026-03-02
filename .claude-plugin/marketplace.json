@@ -9,6 +9,14 @@
   },
   "plugins": [
     {
+      "name": "kak-script",
+      "source": {
+        "source": "github",
+        "repo": "superscript/kak-script"
+      },
+      "description": "Kakoune editor script writing conventions"
+    },
+    {
       "name": "makefile-writing",
       "source": {
         "source": "github",
