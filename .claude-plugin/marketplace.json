@@ -33,6 +33,14 @@
       "description": "A plugin implementing various plugins operations."
     },
     {
+      "name": "ports-dev",
+      "source": {
+        "source": "github",
+        "repo": "superscript/ports-dev"
+      },
+      "description": "Skills for creating and maintaining FreeBSD ports"
+    },
+    {
       "name": "scrip-programming",
       "source": {
         "source": "github",
