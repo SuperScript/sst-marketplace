@@ -14,7 +14,7 @@
         "source": "github",
         "repo": "superscript/kak-script"
       },
-      "description": "Kakoune editor script writing conventions"
+      "description": "Write kakoune script files adhering to SuperScript standards"
     },
     {
       "name": "makefile-writing",
@@ -30,7 +30,7 @@
         "source": "github",
         "repo": "superscript/plugin-ops"
       },
-      "description": "A plugin implementing various plugins operations."
+      "description": "Provide various plugin-management operations"
     },
     {
       "name": "ports-dev",
