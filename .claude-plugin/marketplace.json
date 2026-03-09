@@ -41,6 +41,14 @@
       "description": "Skills for creating and maintaining FreeBSD ports"
     },
     {
+      "name": "project-setup",
+      "source": {
+        "source": "github",
+        "repo": "superscript/project-setup"
+      },
+      "description": "Create new project repositories of various types"
+    },
+    {
       "name": "scrip-programming",
       "source": {
         "source": "github",
