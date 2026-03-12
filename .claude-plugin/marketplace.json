@@ -9,6 +9,14 @@
   },
   "plugins": [
     {
+      "name": "cli-skill",
+      "source": {
+        "source": "github",
+        "repo": "superscript/cli-skill"
+      },
+      "description": "Guide creation of Claude Code skills that wrap CLI tools"
+    },
+    {
       "name": "kak-script",
       "source": {
         "source": "github",
