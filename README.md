@@ -1,6 +1,6 @@
 # SST Marketplace
 
-A curated catalog of Claude Code plugins maintained by the SST community. This repository is a **thin registry** — no plugin code lives here. Each plugin maintains full independence with its own repository, release cycle, and maintainers.
+A curated catalog of Claude Code plugins from SuperScript. This repository is a **thin registry** — no plugin code lives here. Each plugin maintains full independence with its own repository, release cycle, and maintainers.
 
 ## Quick Start
 
