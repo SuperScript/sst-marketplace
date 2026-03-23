@@ -138,6 +138,16 @@ jq -r '
         error "Plugin '${pname}' (pip): missing 'package' field"
       fi
       ;;
+    git-subdir)
+      url="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.url // ""' "${manifest}")"
+      if [ -z "${url}" ]; then
+        error "Plugin '${pname}' (git-subdir): missing 'url' field"
+      fi
+      subdir="$(jq -r --arg n "${pname}" '.plugins[] | select(.name == $n) | .source.path // ""' "${manifest}")"
+      if [ -z "${subdir}" ]; then
+        error "Plugin '${pname}' (git-subdir): missing 'path' field"
+      fi
+      ;;
     "")
       error "Plugin '${pname}': source object missing 'source' type field"
       ;;

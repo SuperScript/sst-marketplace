@@ -76,7 +76,7 @@
       "name": "webrows",
       "source": {
         "source": "git-subdir",
-        "repo": "superscript/webrows",
+        "url": "superscript/webrows",
         "path": "plugin"
       },
       "description": "Browser automation via the webrows Selenium WebDriver CLI"
