@@ -56,8 +56,9 @@
     {
       "name": "project-setup",
       "source": {
-        "source": "github",
-        "repo": "superscript/project-setup"
+        "source": "git-subdir",
+        "url": "superscript/project-setup",
+        "path": "plugin"
       },
       "description": "Create new project repositories of various types"
     },
