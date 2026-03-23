@@ -11,24 +11,27 @@
     {
       "name": "cli-skill",
       "source": {
-        "source": "github",
-        "repo": "superscript/cli-skill"
+        "source": "git-subdir",
+        "url": "superscript/cli-skill",
+        "path": "plugin"
       },
       "description": "Guide creation of Claude Code skills that wrap CLI tools"
     },
     {
       "name": "kak-script",
       "source": {
-        "source": "github",
-        "repo": "superscript/kak-script"
+        "source": "git-subdir",
+        "url": "superscript/kak-script",
+        "path": "plugin"
       },
       "description": "Write kakoune script files adhering to SuperScript standards"
     },
     {
       "name": "makefile-writing",
       "source": {
-        "source": "github",
-        "repo": "superscript/makefile-writing"
+        "source": "git-subdir",
+        "url": "superscript/makefile-writing",
+        "path": "plugin"
       },
       "description": "Write Makefiles adhering to SuperScript standards"
     },
@@ -43,8 +46,9 @@
     {
       "name": "ports-dev",
       "source": {
-        "source": "github",
-        "repo": "superscript/ports-dev"
+        "source": "git-subdir",
+        "url": "superscript/ports-dev",
+        "path": "plugin"
       },
       "description": "Skills for creating and maintaining FreeBSD ports"
     },
@@ -59,16 +63,18 @@
     {
       "name": "scrip-programming",
       "source": {
-        "source": "github",
-        "repo": "superscript/scrip-programming"
+        "source": "git-subdir",
+        "url": "superscript/scrip-programming",
+        "path": "plugin"
       },
       "description": "Programming conventions for use of the scrip project"
     },
     {
       "name": "shell-programming",
       "source": {
-        "source": "github",
-        "repo": "superscript/shell-programming"
+        "source": "git-subdir",
+        "url": "superscript/shell-programming",
+        "path": "plugin"
       },
       "description": "POSIX shell programming conventions for sh scripts"
     },
