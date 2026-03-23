@@ -38,8 +38,9 @@
     {
       "name": "plugin-ops",
       "source": {
-        "source": "github",
-        "repo": "superscript/plugin-ops"
+        "source": "git-subdir",
+        "url": "superscript/plugin-ops",
+        "path": "plugin"
       },
       "description": "Provide various plugin-management operations"
     },
