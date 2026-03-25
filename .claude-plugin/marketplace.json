@@ -36,6 +36,15 @@
       "description": "Write Makefiles adhering to SuperScript standards"
     },
     {
+      "name": "mvps",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/mvps",
+        "path": "plugin"
+      },
+      "description": "Skills for creating high-quality MVPs"
+    },
+    {
       "name": "plugin-ops",
       "source": {
         "source": "git-subdir",
