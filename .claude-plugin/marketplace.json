@@ -90,6 +90,15 @@
       "description": "POSIX shell programming conventions for sh scripts"
     },
     {
+      "name": "skill-config",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/skill-config",
+        "path": "plugin"
+      },
+      "description": "Ensure skill configuration meets SuperScript standards"
+    },
+    {
       "name": "webrows",
       "source": {
         "source": "git-subdir",
