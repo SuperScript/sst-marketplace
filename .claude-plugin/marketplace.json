@@ -27,6 +27,15 @@
       "description": "Write kakoune script files adhering to SuperScript standards"
     },
     {
+      "name": "llm-isms",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/llm-isms",
+        "path": "plugin"
+      },
+      "description": "Find and fix LLM-isms in documents"
+    },
+    {
       "name": "makefile-writing",
       "source": {
         "source": "git-subdir",
