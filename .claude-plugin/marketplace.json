@@ -4,7 +4,7 @@
     "name": "SuperScript"
   },
   "metadata": {
-    "description": "A curated catalog of Claude Code plugins from SuperScript. All plugins are external — no plugin code lives in this repository.",
+    "description": "A curated catalog of Claude Code plugins from SuperScript. All plugins are external; no plugin code lives in this repository.",
     "homepage": "https://github.com/superscript/sst-marketplace"
   },
   "plugins": [
