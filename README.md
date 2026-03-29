@@ -24,6 +24,7 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 | [kak-script](https://github.com/superscript/kak-script) | Write kakoune script files adhering to SuperScript standards |
 | [makefile-writing](https://github.com/superscript/makefile-writing) | Write Makefiles adhering to SuperScript standards |
 | [plugin-ops](https://github.com/superscript/plugin-ops) | Provide various plugin-management operations |
+| [planning](https://github.com/superscript/planning) | Plan logging and resumption skills |
 | [ports-dev](https://github.com/superscript/ports-dev) | Skills for creating and maintaining FreeBSD ports |
 | [project-setup](https://github.com/superscript/project-setup) | Create new project repositories of various types |
 | [scrip-programming](https://github.com/superscript/scrip-programming) | Programming conventions for use of the scrip project |

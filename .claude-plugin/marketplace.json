@@ -63,6 +63,15 @@
       "description": "Provide various plugin-management operations"
     },
     {
+      "name": "planning",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/planning",
+        "path": "plugin"
+      },
+      "description": "Plan logging and resumption skills"
+    },
+    {
       "name": "ports-dev",
       "source": {
         "source": "git-subdir",
