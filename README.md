@@ -21,6 +21,7 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 | Plugin | Description |
 |--------|-------------|
 | [cli-skill](https://github.com/superscript/cli-skill) | Guide creation of Claude Code skills that wrap CLI tools |
+| [five-whys](https://github.com/superscript/five-whys) | Facilitate structured Five Whys root-cause analysis sessions |
 | [kak-script](https://github.com/superscript/kak-script) | Write kakoune script files adhering to SuperScript standards |
 | [makefile-writing](https://github.com/superscript/makefile-writing) | Write Makefiles adhering to SuperScript standards |
 | [plugin-ops](https://github.com/superscript/plugin-ops) | Provide various plugin-management operations |

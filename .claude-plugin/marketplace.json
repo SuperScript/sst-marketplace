@@ -18,6 +18,15 @@
       "description": "Guide creation of Claude Code skills that wrap CLI tools"
     },
     {
+      "name": "five-whys",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/five-whys",
+        "path": "plugin"
+      },
+      "description": "Facilitate structured Five Whys root-cause analysis sessions"
+    },
+    {
       "name": "kak-script",
       "source": {
         "source": "git-subdir",
