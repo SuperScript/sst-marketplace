@@ -9,6 +9,15 @@
   },
   "plugins": [
     {
+      "name": "checklists",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/checklists",
+        "path": "plugin"
+      },
+      "description": "Create and manage checklist skills"
+    },
+    {
       "name": "cli-skill",
       "source": {
         "source": "git-subdir",
@@ -63,15 +72,6 @@
       "description": "Skills for creating high-quality MVPs"
     },
     {
-      "name": "plugin-ops",
-      "source": {
-        "source": "git-subdir",
-        "url": "superscript/plugin-ops",
-        "path": "plugin"
-      },
-      "description": "Provide various plugin-management operations"
-    },
-    {
       "name": "planning",
       "source": {
         "source": "git-subdir",
@@ -79,6 +79,15 @@
         "path": "plugin"
       },
       "description": "Plan logging and resumption skills"
+    },
+    {
+      "name": "plugin-ops",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/plugin-ops",
+        "path": "plugin"
+      },
+      "description": "Provide various plugin-management operations"
     },
     {
       "name": "ports-dev",
