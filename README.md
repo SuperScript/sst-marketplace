@@ -30,6 +30,7 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 | [project-setup](https://github.com/superscript/project-setup) | Create new project repositories of various types |
 | [scrip-programming](https://github.com/superscript/scrip-programming) | Programming conventions for use of the scrip project |
 | [shell-programming](https://github.com/superscript/shell-programming) | POSIX shell programming conventions for sh scripts |
+| [unix-programming](https://github.com/superscript/unix-programming) | Guidelines for programming in UNIX style |
 
 ## Repository Structure
 

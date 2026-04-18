@@ -135,6 +135,15 @@
       "description": "Ensure skill configuration meets SuperScript standards"
     },
     {
+      "name": "unix-programming",
+      "source": {
+        "source": "git-subdir",
+        "url": "superscript/unix-programming",
+        "path": "plugin"
+      },
+      "description": "Guidelines for programming in UNIX style"
+    },
+    {
       "name": "webrows",
       "source": {
         "source": "git-subdir",
