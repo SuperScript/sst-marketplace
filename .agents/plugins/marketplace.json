@@ -7,9 +7,9 @@
     {
       "name": "checklists",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/checklists.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/checklists.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -20,9 +20,9 @@
     {
       "name": "cli-skill",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/cli-skill.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/cli-skill.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -33,9 +33,9 @@
     {
       "name": "five-whys",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/five-whys.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/five-whys.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -46,9 +46,9 @@
     {
       "name": "kak-script",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/kak-script.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/kak-script.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -59,9 +59,9 @@
     {
       "name": "llm-isms",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/llm-isms.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/llm-isms.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -72,9 +72,9 @@
     {
       "name": "makefile-writing",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/makefile-writing.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/makefile-writing.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -85,9 +85,9 @@
     {
       "name": "mvps",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/mvps.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/mvps.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -98,9 +98,9 @@
     {
       "name": "planning",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/planning.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/planning.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -111,9 +111,9 @@
     {
       "name": "plugin-ops",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/plugin-ops.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/plugin-ops.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -124,9 +124,9 @@
     {
       "name": "ports-dev",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/ports-dev.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/ports-dev.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -137,9 +137,9 @@
     {
       "name": "project-setup",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/project-setup.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/project-setup.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -150,9 +150,9 @@
     {
       "name": "scrip-programming",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/scrip-programming.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/scrip-programming.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -163,9 +163,9 @@
     {
       "name": "shell-programming",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/shell-programming.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/shell-programming.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -176,9 +176,9 @@
     {
       "name": "skill-config",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/skill-config.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/skill-config.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -189,9 +189,9 @@
     {
       "name": "unix-programming",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/unix-programming.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/unix-programming.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -202,9 +202,9 @@
     {
       "name": "webrows",
       "source": {
-        "source": "git",
-        "url": "git@github.com:superscript/webrows.git",
-        "path": "plugin"
+        "source": "git-subdir",
+        "url": "https://github.com/superscript/webrows.git",
+        "path": "./plugin"
       },
       "policy": {
         "installation": "AVAILABLE",
