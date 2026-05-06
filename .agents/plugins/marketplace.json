@@ -8,7 +8,7 @@
       "name": "checklists",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/checklists.git",
+        "url": "git@github.com:superscript/checklists.git",
         "path": "./plugin"
       },
       "policy": {
@@ -21,7 +21,7 @@
       "name": "cli-skill",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/cli-skill.git",
+        "url": "git@github.com:superscript/cli-skill.git",
         "path": "./plugin"
       },
       "policy": {
@@ -34,7 +34,7 @@
       "name": "five-whys",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/five-whys.git",
+        "url": "git@github.com:superscript/five-whys.git",
         "path": "./plugin"
       },
       "policy": {
@@ -47,7 +47,7 @@
       "name": "kak-script",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/kak-script.git",
+        "url": "git@github.com:superscript/kak-script.git",
         "path": "./plugin"
       },
       "policy": {
@@ -60,7 +60,7 @@
       "name": "llm-isms",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/llm-isms.git",
+        "url": "git@github.com:superscript/llm-isms.git",
         "path": "./plugin"
       },
       "policy": {
@@ -73,7 +73,7 @@
       "name": "makefile-writing",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/makefile-writing.git",
+        "url": "git@github.com:superscript/makefile-writing.git",
         "path": "./plugin"
       },
       "policy": {
@@ -86,7 +86,7 @@
       "name": "mvps",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/mvps.git",
+        "url": "git@github.com:superscript/mvps.git",
         "path": "./plugin"
       },
       "policy": {
@@ -99,7 +99,7 @@
       "name": "planning",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/planning.git",
+        "url": "git@github.com:superscript/planning.git",
         "path": "./plugin"
       },
       "policy": {
@@ -112,7 +112,7 @@
       "name": "plugin-ops",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/plugin-ops.git",
+        "url": "git@github.com:superscript/plugin-ops.git",
         "path": "./plugin"
       },
       "policy": {
@@ -125,7 +125,7 @@
       "name": "ports-dev",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/ports-dev.git",
+        "url": "git@github.com:superscript/ports-dev.git",
         "path": "./plugin"
       },
       "policy": {
@@ -138,7 +138,7 @@
       "name": "project-setup",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/project-setup.git",
+        "url": "git@github.com:superscript/project-setup.git",
         "path": "./plugin"
       },
       "policy": {
@@ -151,7 +151,7 @@
       "name": "scrip-programming",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/scrip-programming.git",
+        "url": "git@github.com:superscript/scrip-programming.git",
         "path": "./plugin"
       },
       "policy": {
@@ -164,7 +164,7 @@
       "name": "shell-programming",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/shell-programming.git",
+        "url": "git@github.com:superscript/shell-programming.git",
         "path": "./plugin"
       },
       "policy": {
@@ -177,7 +177,7 @@
       "name": "skill-config",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/skill-config.git",
+        "url": "git@github.com:superscript/skill-config.git",
         "path": "./plugin"
       },
       "policy": {
@@ -190,7 +190,7 @@
       "name": "unix-programming",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/unix-programming.git",
+        "url": "git@github.com:superscript/unix-programming.git",
         "path": "./plugin"
       },
       "policy": {
@@ -203,7 +203,7 @@
       "name": "webrows",
       "source": {
         "source": "git-subdir",
-        "url": "git:superscript/webrows.git",
+        "url": "git@github.com:superscript/webrows.git",
         "path": "./plugin"
       },
       "policy": {
