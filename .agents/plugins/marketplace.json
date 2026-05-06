@@ -1,0 +1,216 @@
+{
+  "name": "sst-marketplace",
+  "interface": {
+    "displayName": "SST Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "checklists",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/checklists.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cli-skill",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/cli-skill.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "five-whys",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/five-whys.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "kak-script",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/kak-script.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "llm-isms",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/llm-isms.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "makefile-writing",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/makefile-writing.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "mvps",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/mvps.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "planning",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/planning.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "plugin-ops",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/plugin-ops.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ports-dev",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/ports-dev.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "project-setup",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/project-setup.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "scrip-programming",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/scrip-programming.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "shell-programming",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/shell-programming.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "skill-config",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/skill-config.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "unix-programming",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/unix-programming.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "webrows",
+      "source": {
+        "source": "git",
+        "url": "git@github.com:superscript/webrows.git",
+        "path": "plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
