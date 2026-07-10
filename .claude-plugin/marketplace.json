@@ -161,7 +161,9 @@
       },
       "description": "Research X data and automate confirmation-gated actions through Xquik REST and MCP",
       "version": "2.4.16",
-      "author": "Xquik",
+      "author": {
+        "name": "Xquik"
+      },
       "license": "MIT",
       "keywords": ["x", "research", "automation", "mcp"],
       "category": "data"
