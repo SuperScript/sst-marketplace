@@ -151,6 +151,20 @@
         "path": "plugin"
       },
       "description": "Browser automation via the webrows Selenium WebDriver CLI"
+    },
+    {
+      "name": "x-twitter-scraper",
+      "source": {
+        "source": "github",
+        "repo": "Xquik-dev/x-twitter-scraper",
+        "ref": "v2.4.16"
+      },
+      "description": "Research X data and automate confirmation-gated actions through Xquik REST and MCP",
+      "version": "2.4.16",
+      "author": "Xquik",
+      "license": "MIT",
+      "keywords": ["x", "research", "automation", "mcp"],
+      "category": "data"
     }
   ]
 }
