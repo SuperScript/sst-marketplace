@@ -7,7 +7,7 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 ### Add the marketplace
 
 ```
-/plugin marketplace add sst/sst-marketplace
+/plugin marketplace add superscript/sst-marketplace
 ```
 
 ### Install a plugin
@@ -34,6 +34,8 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 | [shell-programming](https://github.com/superscript/shell-programming) | POSIX shell programming conventions for sh scripts |
 | [unix-programming](https://github.com/superscript/unix-programming) | Guidelines for programming in UNIX style |
 | [x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) | Research X data and automate confirmation-gated actions through Xquik REST and MCP |
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ## Repository Structure
 
@@ -190,7 +192,7 @@ To have your team automatically use this marketplace, add it to your project's `
 ```json
 {
   "plugins": {
-    "marketplaces": ["sst/sst-marketplace"]
+    "marketplaces": ["superscript/sst-marketplace"]
   }
 }
 ```
