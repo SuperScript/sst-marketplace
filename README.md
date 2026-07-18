@@ -7,7 +7,7 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 ### Add the marketplace
 
 ```
-/plugin marketplace add sst/sst-marketplace
+/plugin marketplace add superscript/sst-marketplace
 ```
 
 ### Install a plugin
@@ -23,14 +23,19 @@ A curated catalog of Claude Code plugins from SuperScript. This repository is a 
 | [cli-skill](https://github.com/superscript/cli-skill) | Guide creation of Claude Code skills that wrap CLI tools |
 | [five-whys](https://github.com/superscript/five-whys) | Facilitate structured Five Whys root-cause analysis sessions |
 | [kak-script](https://github.com/superscript/kak-script) | Write kakoune script files adhering to SuperScript standards |
+| [llm-isms](https://github.com/superscript/llm-isms) | Find and fix LLM-isms in documents |
 | [makefile-writing](https://github.com/superscript/makefile-writing) | Write Makefiles adhering to SuperScript standards |
-| [plugin-ops](https://github.com/superscript/plugin-ops) | Provide various plugin-management operations |
+| [mvps](https://github.com/superscript/mvps) | Skills for creating high-quality MVPs |
 | [planning](https://github.com/superscript/planning) | Plan logging and resumption skills |
+| [plugin-ops](https://github.com/superscript/plugin-ops) | Provide various plugin-management operations |
 | [ports-dev](https://github.com/superscript/ports-dev) | Skills for creating and maintaining FreeBSD ports |
 | [project-setup](https://github.com/superscript/project-setup) | Create new project repositories of various types |
 | [scrip-programming](https://github.com/superscript/scrip-programming) | Programming conventions for use of the scrip project |
 | [shell-programming](https://github.com/superscript/shell-programming) | POSIX shell programming conventions for sh scripts |
 | [unix-programming](https://github.com/superscript/unix-programming) | Guidelines for programming in UNIX style |
+| [x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper) | Research X data and automate confirmation-gated actions through Xquik REST and MCP |
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ## Repository Structure
 
@@ -187,7 +192,7 @@ To have your team automatically use this marketplace, add it to your project's `
 ```json
 {
   "plugins": {
-    "marketplaces": ["sst/sst-marketplace"]
+    "marketplaces": ["superscript/sst-marketplace"]
   }
 }
 ```
